@@ -25,6 +25,43 @@
 
 
 
+<!-- Styles for WhatsApp Button -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 80px;
+        left: 20px;
+        z-index: 9999;
+        background-color: transparent;
+    }
+    .whatsapp-float img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 80px;
+        left: 20px;
+        z-index: 9999;
+        animation: bounce 2.5s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-6px);
+        }
+    }
+    
+    
+    </style>
+
 
 </head>
 
@@ -930,9 +967,9 @@
 
 
 <!--Scroll to top-->
-<button class="scroll-top scroll-to-target" data-target="html">
+<!-- <button class="scroll-top scroll-to-target" data-target="html">
     <span class="fa fa-arrow-up"></span>
-</button>
+</button> -->
 
 
 
@@ -951,6 +988,20 @@
 
 <!-- main-js -->
 <script src="js/script.js"></script>
+
+<!-- WhatsApp Floating Button -->
+<a 
+  href="https://wa.me/7799999744" 
+  class="whatsapp-float" 
+  target="_blank" 
+  title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+</a>
+
+
+<!-- Zoho SalesIQ Live Chat -->
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq2c3a3131f2f7ee06910ca9b55c13b131a9fd241d5e1bd96742ebbfcb815ba9a9" defer></script>
+
 
 </body><!-- End of .page_wrapper -->
 
