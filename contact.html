@@ -15,6 +15,43 @@
 <link href="css/responsive.css" rel="stylesheet">
 <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
+<!-- Styles for WhatsApp Button -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 80px;
+        left: 20px;
+        z-index: 9999;
+        background-color: transparent;
+    }
+    .whatsapp-float img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 80px;
+        left: 20px;
+        z-index: 9999;
+        animation: bounce 2.5s infinite;
+    }
+    
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+            transform: translateY(0);
+        }
+        40% {
+            transform: translateY(-10px);
+        }
+        60% {
+            transform: translateY(-6px);
+        }
+    }
+    
+    
+</style>
+
 </head>
 
 <!-- page wrapper -->
@@ -62,28 +99,18 @@
 
        
         <!-- header-upper -->
-        <div class="header-upper">
-        <div class="container">
-            <div class="clearfix inner-container">
-                <div class="left-content pull-left">
-                    <div class="info-box">
-                        <div class="icon-box"><i class="flaticon-placeholder"></i></div>
-                        <h5>Head Office</h5>
-                        <span>P.O. Box 285, 2nd Industrial City</span>
-                    </div>
-                    <div class="logo-box">
-                        <figure class="logo"><a href="index-2.html"><img src="images/logo.png" alt=""></a></figure>
-                    </div>
-                </div>
-                <div class="right-content pull-right">
-                    <div class="info-box">
-                        <div class="icon-box"><i class="flaticon-mail"></i></div>
-                        <h5>Email</h5>
-                        <a href="mailto:info@example.com">info@example.com</a>
+        <div class="header-upper" style="background-color: #1a2a5a; padding: 25px 0 10px;">
+            <div class="container">
+                <div class="inner-container" style="display: flex; justify-content: center; align-items: center;">
+                    <div class="logo-box" style="text-align: center;">
+                        <figure class="logo" style="margin: 0;">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="AL-SHARQ Logo" style="max-height: 125px; width: auto;">
+                            </a>
+                        </figure>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
         <!-- header-upper end -->
 
@@ -391,9 +418,23 @@
 
 
 <!--Scroll to top-->
-<button class="scroll-top scroll-to-target" data-target="html">
+<!-- <button class="scroll-top scroll-to-target" data-target="html">
     <span class="fa fa-arrow-up"></span>
-</button>
+</button> -->
+
+<!-- WhatsApp Floating Button -->
+<a 
+  href="https://wa.me/7799999744" 
+  class="whatsapp-float" 
+  target="_blank" 
+  title="Chat with us on WhatsApp">
+    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp Chat" />
+</a>
+
+
+<!-- Zoho SalesIQ Live Chat -->
+<script>window.$zoho=window.$zoho || {};$zoho.salesiq=$zoho.salesiq||{ready:function(){}}</script><script id="zsiqscript" src="https://salesiq.zohopublic.in/widget?wc=siq2c3a3131f2f7ee06910ca9b55c13b131a9fd241d5e1bd96742ebbfcb815ba9a9" defer></script>
+
 
 
 
